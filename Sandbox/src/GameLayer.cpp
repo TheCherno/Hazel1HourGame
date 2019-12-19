@@ -131,9 +131,9 @@ void GameLayer::CreateCamera(uint32_t width, uint32_t height)
 {
 	float aspectRatio = (float)width / (float)height;
 
-	float camWidth = 8.0f;
-	float bottom = -camWidth;
-	float top = camWidth;
+	float camHeight = 8.0f;
+	float bottom = -camHeight;
+	float top = camHeight;
 	float left = bottom * aspectRatio;
 	float right = top *aspectRatio;
 	m_Camera = CreateScope<OrthographicCamera>(left, right, bottom, top);
